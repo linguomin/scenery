@@ -1,0 +1,339 @@
+/*banner图片*/
+.banner {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.banner ul.banner-img {
+    position: absolute;
+    left: 0;
+}
+
+.banner ul.banner-img > li {
+    float: left;
+    width: 1920px;
+}
+
+/*轮播小长条*/
+.banner ul.indicators {
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    width: 100%;
+}
+
+.banner ul.indicators li {
+    width: 10%;
+    height: 0.3em;
+    background: #C3E7FA;
+    float: left;
+    margin-right: 1px;
+    transition: all .2s linear;
+}
+
+.banner ul.indicators li:hover, .banner ul.indicators li.hover {
+    cursor: pointer;
+    background-color: #0a8cd2;
+}
+
+/*主体内容floor1*/
+/*floor1-top*/
+.container {
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*一层样式*/
+#floor1 .content-top > p,
+#floor2 .content-top > p,
+#floor3 .content-top > p,
+#floor4 .content-top > p {
+    padding: 0 0 20px 35px;
+    background-position: 0px 5px;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+#floor1 .content-top > p {
+    background-image: url("../img/index/resou.jpg");
+}
+
+.floor1-content, .floor2-content, .floor3-content, .floor4-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor1-content > div:first-child {
+    width: 1018px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor1-content > div:last-child {
+    width: 237px;
+    height: 435px;
+}
+
+.floor1-content > div > div:first-child {
+    width: 599px;
+    height: 215px;
+}
+
+.floor1-content > div:first-child > div:nth-child(2) {
+    width: 415px;
+    height: 215px;
+}
+
+.floor1-content > div > div:nth-child(3) {
+    width: 415px;
+    height: 215px;
+}
+
+.floor1-content > div:first-child > div:last-child {
+    width: 599px;
+    height: 215px;
+}
+
+/*二层样式*/
+#floor2 .content-top > p {
+    background-image: url("../img/index/guonei.jpg");
+}
+
+.floor2-content > div:first-child {
+    width: 297px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor2-content > div:first-child > div {
+    width: 297px;
+    height: 215px;
+}
+
+.floor2-content > div:nth-child(2) {
+    width: 478px;
+    height: 435px;
+}
+
+.floor2-content > div:nth-child(3) {
+    width: 477px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor2-content > div:nth-child(3) > div {
+    width: 477px;
+    height: 215px;
+}
+
+/*三层样式*/
+#floor3 .content-top > p {
+    background-image: url("../img/index/guonei.jpg");
+}
+
+.floor3-content > div:first-child {
+    width: 355px;
+    height: 435px;
+}
+
+.floor3-content > div:last-child {
+    width: 900px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor3-content > div:last-child > div:first-child,
+.floor3-content > div:last-child > div:nth-child(3) {
+    width: 522px;
+    height: 215px;
+}
+
+.floor3-content > div:last-child > div:nth-child(2),
+.floor3-content > div:last-child > div:last-child {
+    width: 372px;
+    height: 215px;
+}
+
+/*四层样式*/
+#floor4 .content-top > p {
+    background-image: url("../img/index/gangaotai.jpg");
+}
+
+.floor4-content > div:first-child {
+    width: 600px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor4-content > div:last-child {
+    width: 655px;
+    height: 435px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.floor4-content > div:first-child > div:first-child,
+.floor4-content > div:first-child > div:nth-child(2) {
+    width: 297px;
+    height: 215px;
+}
+
+.floor4-content > div:first-child > div:last-child {
+    width: 600px;
+    height: 215px;
+}
+
+.floor4-content > div:last-child > div:first-child {
+    width: 415px;
+    height: 435px;
+}
+
+.floor4-content > div:last-child > div:last-child {
+    width: 236px;
+    height: 435px;
+}
+
+.morehover:hover{
+    color: #2C7EC1;
+}
+
+/*遮罩层*/
+.text-desc > h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+}
+
+.text-desc > p {
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #4d92d9;
+    background-color: #4d92d9;
+    text-decoration: none;
+    transition: all .5s linear;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #4d92d9;
+    transition: all .5s linear;
+}
+
+.text-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(84, 150, 218, 0.3);
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    transform: rotateX(80deg);
+    transform-origin: center bottom 0;
+    transition: all .5s linear;
+}
+
+.floor-img {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+}
+
+.floor-img img {
+    transition: all .4s linear;
+}
+
+.floor-img:hover .text-desc {
+    transform: none;
+    opacity: 1;
+}
+
+.floor-img:hover img {
+    transform-origin: center top 0;
+    transform: rotateX(-100deg);
+}
+
+/*楼梯样式*/
+#lift {
+    margin-top: 25px;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    background-color: #918888;
+    left: 10px;
+    top: 100px;
+}
+
+.lift_item {
+    border-top: 1px solid #b1aaaa;
+    transition: background-color .1s;
+    transition: all .5s linear;
+}
+
+.lift_btn {
+    overflow: hidden;
+    display: block;
+    width: 24px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+}
+
+.lift_item:hover, .lift_item_on {
+    position: relative;
+    border-bottom: 1px solid #d70b1c;
+    margin-bottom: -1px;
+    border-color: #d70b1c;
+    background-color: #d70b1c;
+}
+
+.lift_btn {
+    overflow: hidden;
+    display: block;
+    width: 34px;
+    padding: 10px 5px;
+    line-height: 14px;
+    text-align: center;
+    color: #fefefe;
+    transition: color .1s;
+}
+
+.lift_btn_txt {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+

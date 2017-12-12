@@ -1,0 +1,90 @@
+.container{
+    background: #f2f2f2;
+
+}
+.content{
+    width: 980px;
+    margin:auto;
+}
+.content>h4{
+    padding: 10px;
+}
+.my-tabs{
+    position: relative;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tabs{
+    width: 200px;
+    border-radius: 15%;
+    height: 412px;
+    padding: 110px 53px;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 50px;
+}
+.tabs::after{
+    margin-top: -102px;
+    margin-left: 146px;
+    content: "";
+    float: left;
+    border: 2em solid #f2f2f2;
+    border-left-color: #fff;
+}
+.tabs-content{
+    border-radius: 5%;
+    width: 730px;
+    height: 400px;
+    position: relative;
+
+}
+.tabs a{
+    text-decoration:none;
+    color:#000;
+    display:inline-block;
+    width:96px;
+    text-align:center;
+}
+.tabs>li{
+    padding:10px 0;
+    border-radius: 50%;
+}
+.box{
+    width: 95px;
+    height: 42px;
+    box-sizing: border-box;
+    background: #32b2e8;
+    opacity: 0.6;
+    position: absolute;
+    top: 110px;
+    left: 53px;
+    border-radius: 50%;
+    transition:all .5s linear;
+}
+
+
+.tabs-content>div{
+    transform: translateY(400px) rotateX(-90deg);
+    transition: all .5s linear;
+    padding:30px;
+    width: 670px;
+    height: 350px;
+    background: #fff;
+    position: absolute;
+    border-radius: 5%;
+    top: 0;
+    left: 0;
+}
+.tabs-content>div h2{
+    padding: 20px 5px;
+}
+.tabs-content>div p{
+    padding:10px 5px;
+}
+.tabs-content>.active{
+    z-index:10;
+    transform: translateZ(800px);
+
+}

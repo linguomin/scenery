@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足迹-注册页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!--页面头部-->
+    <header id="top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/header/logo.png">
+            </a>
+            <span>欢迎注册足迹网</span>
+        </div>
+    </header>
+    <session>
+        <!-- 搭建页面身体定义一个总的容体 -->
+        <div id="container">
+            <!-- 定义一个容积装载表单 -->
+            <div class="panel">
+                <form action="" method="post">
+                    <div class="word">
+                        <p>
+                            登录名称：
+                            <input type="text" name="uname" placeholder="请输入用户名" autofocus>
+                            <span id="uname-show"></span>
+                        </p>
+                        <p>
+                            登录密码：
+                            <input type="password" name="upwd" placeholder="请输入密码">
+                            <span id="upwd-show"></span>
+                        </p>
+                        <p>
+                            确认密码：
+                            <input type="password" placeholder="请确认密码" id="cpwd">
+                            <span id="cpwd-show"></span>
+                        </p>
+                        <p>
+                            电子邮件：
+                            <input type="email" name="email" placeholder="请输入邮箱">
+                            <span id="email-show"></span>
+                        </p>
+                        <p>
+                            移动电话：
+                            <input type="text" name="phone" placeholder="请输入电话">
+                            <span id="phone-show"></span>
+                        </p>
+                        <input type="button" value="提交注册信息" id="bt-register">
+                        <p>
+                            <span>已有账号？</span>
+                            <a href="login.html">直接登录</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </session>
+    <footer id="footer">
+        <img src="img/loading.gif" alt="加载中..." >
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/base.js"></script>
+</body>
+</html>

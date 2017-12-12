@@ -1,0 +1,104 @@
+/*login头部修饰*/
+#top{
+    height:70px;
+    width:100%;
+}
+.logo>a>img{
+    width:80px;
+    float:left;
+    margin-top:5px;
+    margin-left:10%;
+}
+.logo>span{
+    font-size: 2.8em;
+    line-height: 70px;
+    color:#58B8E6;
+    font-family:"楷体";
+}
+#container{
+    background-size: 100%;
+    height: 700px;
+    background: url("../img/login/login.png") no-repeat center center;
+}
+#cover{
+    width:280px;
+    height:300px;
+    margin:auto;
+}
+.word{
+    width:260px;
+    height:277px;
+    padding:10px;
+    padding-top: 6em;
+}
+#cover .word p{
+    font-size:18px;
+    border-bottom:1px solid #fff;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#cover .word p span a{
+    float:right;
+    font-size:10px;
+    margin-top:8px;
+}
+#cover .word p,#cover .word p span a,#cover .word .chose label,#cover .word .chose span,.word>input{
+    color:#fff;
+}
+#login{
+    background-color:blue;
+}
+#cover .word .text{
+    width:260px;
+    height:42px;
+    background:#fff;
+    margin-bottom:35px;
+    border-radius: 20px;
+}
+#uname,#upwd{
+    outline:none;
+    border:none;
+    padding:13px 20px;
+    width: 170px;
+    border-radius: 20px;
+}
+#cover .word .text img{
+    vertical-align:top;
+    margin-top:7px;
+}
+#cover .word .chose{
+    font-size:12px;
+    margin-bottom:10px;
+}
+#cover .word .chose span{
+    float:right;
+}
+#cover .word .chose label{
+    margin-left:22px;
+    cursor: pointer;
+}
+#ch_user{
+    position:absolute;
+    cursor: pointer;
+}
+.word>input{
+    border:none;
+    width:260px;
+    height:35px;
+    background:linear-gradient(to bottom,#27B0F6 0%,#0AA1ED 100%);
+    font-size:18px;
+    outline:none;
+    border-radius:20px;
+    font-weight:bold;
+    cursor: pointer;
+
+}
+#show-uname,#show-result,#show-upwd{
+    color:red;
+    margin-left:20px;
+    font-size:12px;
+    font-weight: bold;
+}

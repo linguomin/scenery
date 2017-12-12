@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>留言区</title>
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/message.css"/>
+    <link rel="stylesheet" href="css/footer.css">    
+</head>
+<body>
+<!-- 页面头部-->
+<header id="header">
+    <img src="img/loading.gif" alt=""/>
+</header>
+<!-- 页面主体内容-->
+<session>
+    <div class="mainframe">
+        <div class="title">留言板</div>
+        <div class="message">主人寄语</div>
+        <div class="info">
+            请在下方发表您的意见
+        </div>
+        <div class="content" contenteditable="true"></div>
+        <input type="button" name="submit" value="发表" class="subbtn">
+
+        <div class="numofmessage">留言(1)</div>
+        <!-- 下面是留言区 -->
+        <div class="msgFrame">
+            <div class="content_1">
+                <img class="name" src="img/avater/default.png" alt="photo">
+                <div class="mainInfo">
+                    <div class="userId">
+                        <a href="#">test</a>
+                    </div>
+                    <div class="conInfo">test</div>
+                    <div class="time">2017-11-30 22:56:48</div>
+                </div>
+            </div>
+        </div>
+        <div id="pages">
+            <!--<a href="#" class="disabled">上一页</a>-->
+            <!--<a href="#">1</a>-->
+            <!--<a href="#">2</a>-->
+            <!--<a href="#">3</a>-->
+            <!--<a href="#">下一页</a>-->
+        </div>        
+    </div>
+</session>
+<!-- 页面底部-->
+<footer id="footer">
+    <img src="img/loading.gif" alt=""/>
+</footer>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/message.js"></script>
+</body>
+</html>

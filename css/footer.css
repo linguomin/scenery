@@ -1,0 +1,79 @@
+/*底部样式*/
+.footer-container{
+    width: 1260px;
+    height: 300px;
+    border-top: 1px dashed #aaaaaa;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.link{
+    float: left;
+    width: 900px;
+    margin-top: 15px;
+    position: relative;
+}
+.link>ul{
+    float:left;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.link>ul>li{
+    margin:10px 0;
+}
+.link>ul>li:first-child{
+    font-weight:bold;
+}
+.link>ul>li>a:hover{
+    color: #0a8cd2;
+    text-decoration: underline;
+}
+.phone{
+    margin-top: 15px;
+    padding-left: 20px;
+    height: 165px;
+    float: left;
+    border-left:1px solid #aaaaaa;
+}
+.phone>ul{
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.phone>ul>li{
+    margin-bottom: 10px;
+}
+.phone>ul>li>img{
+    width: 100px;
+}
+.footer-container>p{
+    float:left;
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.backgroung-image{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 5px;
+}
+.pic1{
+    background:url("../img/footer/footicon.png") no-repeat ;
+    background-position: -210px;
+    left: 15px;
+}
+.pic2{
+    background:url("../img/footer/footicon.png") no-repeat ;
+    background-position: -70px;
+    left: 230px;
+}
+.pic3{
+    background:url("../img/footer/footicon.png") no-repeat ;
+    left: 440px;
+}
+.pic4{
+    background:url("../img/footer/footicon.png") no-repeat ;
+    background-position: -280px;
+    width: 40px;
+    left: 650px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>足迹-登录页面</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!--页面头部-->
+    <header id="top">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/header/logo.png">
+            </a>
+            <span>欢迎登录足迹网</span>
+        </div>
+    </header>
+    <session>
+        <div id="container">
+            <!-- 定义一个容积装载表单 -->
+            <div id="cover">
+                <form action="#" method="post">
+                    <!-- 用一个div将所有的表单要提交的数据括起来 -->
+                    <div class="word">
+                        <p>
+                            登录足迹网
+                            <span>
+                                <a href="register.html">新用户注册</a>
+                            </span>
+                        </p>
+                        <!-- 定义用户名输入框 -->
+                        <div class="text">
+                            <input type="text" placeholder="请输入您的用户名" name="uname" id="uname" required autofocus>
+                            <span>
+                                <img src="img/login/yhm.png">
+                            </span>
+                            <!-- 该div用于判断用户名是否为空 -->
+                            <div id="show-uname"></div>
+                        </div>
+                        <!-- 定义密码输入框 -->
+                        <div class="text">
+                            <input type="password" name="upwd" placeholder="请输入您的密码" id="upwd" required minlength="6" maxlength="15">
+                            <span>
+                                <img src="img/login/mm.png">
+                            </span>
+                            <!-- 该div用于判断密码是否为空 -->
+                            <div id="show-upwd"></div>                            
+                        </div>
+                        <!-- 定义一个自动登录选项框 -->
+                        <div class="chose">
+                            <input type="checkbox" class="checkbox" id="ch_user">
+                            <label for="ch_user">自动登录</label>
+                            <span>
+                                <a href="">忘记密码？</a>
+                            </span>
+                        </div>
+                        <!-- 定义一个登录按钮 -->
+                        <input type="submit" value="登录" id="btn-login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </session>
+    <footer id="footer">
+        <img src="img/loading.gif" alt="加载中..." >
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

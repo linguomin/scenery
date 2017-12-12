@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+<!--页面头部-->
+<header id="header">
+    <img src="img/loading.gif" alt="加载中...">
+</header>
+<!--主体内容-->
+<div class="container">
+    <div class="content">
+        <h4>
+            <span>首页 > </span>
+            <span id="text">关于我们</span>
+        </h4>
+        <div class="my-tabs">
+            <ul class="tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#content1">关于我们</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#content2">服务承诺</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#content3">联系我们</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#content4">免责声明</a>
+                </li>
+            </ul>
+            <div class="box"></div>
+            <div class="tabs-content">
+                <div id="content1" class="active">
+                    <h2>关于我们</h2>
+                    <p>足迹网属于个人练手网站，不盈利</p>
+                    <p>网站里面如有别人的图片及信息请忽略</p>
+                    <p>对待所有客户我们秉承提供具有价格优势的产品和满意的服务为宗旨，以一流的产品质量和精湛的服务体系在行业客户中赢得较高声誉。公司秉承“以质为根、以诚为本、以德为先、以信为生”的发展理念，奉行“进取求实 严谨团结”的工作方针，不断开拓创新。以服务为核心，为最高宗旨，竭诚提供性价比最高的商品及无微不至的服务。公司集销售、物流、售后于一体，让您买的安心，用的舒心！</p>
+                </div>
+                <div id="content2">
+                    <h2>服务承诺</h2>
+                    <p>尊敬的纳税人，您好：</p>
+                    <p>感谢您对足迹一如既往的支持与信任,新疆航天信息有限公司始终秉承“信念为志、信任立本、信心服务、信誉至上”的经营理念，致力于“信心服务”的服务品牌建设。</p>
+                    <p>为纳税人提供7*24热线服务，全疆统一客服电话95113。提供技术支持、业务咨询及网络远程服务，服务电话在8分钟内无法解决的问题，登记派工信息后派技术服务工程师现场服务。</p>
+                </div>
+                <div id="content3">
+                    <h2>联系我们</h2>
+                    <p>足迹热线中心秉承"感动常在"的宗旨，诚心诚意为顾客提供专业、优质的服务。</p>
+                    <p>如果您有任何意见或建议，请发邮件给我们。我们会在收到邮件后的1个工作日内给您回复。*全线产品</p>
+                    <p>服务热线：15822827795</p>
+                    <p>服务时间：8：00 ～ 23：00（周一 ～ 周五）</p>
+                    <p>9：00 ～ 17：00（周末,节假日）</p>
+                    <p>Email：linguominsterling@gmail.com</p>
+                </div>
+                <div id="content4">
+                    <h2>免责声明</h2>
+                    <p>本人/单位(姓名/单位名称)于(时间)委托(委托人或单位)申 请购买了(产品名称)，</p>
+                    <p>由于(概述问题)，本人/单位 (姓名/单位名称)现申请获得(产品名称)的管理权。</p>
+                    <p>为了避免权属纠纷，特做如下说明：(姓名/单位名称)是(产品名称)的真正所有者，今后由(产品名称)引起的纠纷和造成的一切后果，其责任概由(姓名/单位名称)承担，与(委托人或单位)无关。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--页面底部-->
+<footer id="footer">
+    <img src="img/loading.gif" alt="加载中...">
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/base.js"></script>
+<script>
+    $(".tabs:has([data-toggle=tab])").on("click", "[data-toggle=tab]", e => {
+        e.preventDefault();
+        var $tar = $(e.target);
+        if (!$tar.parent().is(".active")) {
+            $tar.parent().addClass("active")
+                .siblings().removeClass("active");
+            var id = $tar.attr("href");
+            $(id).addClass("active")
+                .siblings().removeClass("active");
+            $('#text').text($tar.text());
+        }
+        const LIWIDTH=41;
+        var i=$(e.target).parent().index();
+        $(".box").css("top",110+i*LIWIDTH);
+    })
+</script>
+</body>
+</html>

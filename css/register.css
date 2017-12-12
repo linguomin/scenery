@@ -1,0 +1,82 @@
+/*login头部修饰*/
+#top{
+    height:70px;
+    width:100%;
+}
+.logo>a>img{
+    width:80px;
+    float:left;
+    margin-top:5px;
+    margin-left:10%;
+}
+.logo>span{
+    font-size: 2.8em;
+    line-height: 70px;
+    color:#58B8E6;
+    font-family:"楷体";
+}
+#container{
+    background-size: 100%;
+    height:700px;
+    background: url("../img/login/register.png") no-repeat center center;
+}
+.panel{
+    width: 300px;
+    height:300px;
+    margin:auto;
+}
+.word{
+    width: 600px;
+    padding:10px;
+    padding-top: 8em;
+}
+.word p{
+    font-size:18px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:15px;
+}
+.word p,.word p span{
+    color:#fff;
+}
+.word>p>input{
+    height: 25px;
+    border:none;
+    outline:none;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+.word>p>a{
+    color:blue;
+}
+.word>input{
+    border:none;
+    width:270px;
+    height:35px;
+    background:linear-gradient(to bottom,#27B0F6 0%,#0AA1ED 100%);
+    font-size:18px;
+    outline:none;
+    border-radius:3px;
+    font-weight:bold;
+    cursor: pointer;
+    color:#fff;
+}
+#uname-show,#upwd-show,#cpwd-show,#email-show,#phone-show{
+    display: inline-block;
+    height: 25px;
+    font-size: 14px;
+    font-family: bold;
+    padding-left: 25px;    
+    background-size: 20px; 
+    color:red;
+}
+.err{
+    background: url('../img/login/tan.png') no-repeat 0 0;
+}
+.correct{
+    background: url('../img/login/true.png') no-repeat 0 0;
+    color: #fff !important;
+}
+.text{
+    color:#fff !important;
+}

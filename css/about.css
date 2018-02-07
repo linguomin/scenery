@@ -1,22 +1,26 @@
-.container{
+.container {
     background: #f2f2f2;
 
 }
-.content{
+
+.content {
     width: 980px;
-    margin:auto;
+    margin: auto;
 }
-.content>h4{
+
+.content > h4 {
     padding: 10px;
 }
-.my-tabs{
+
+.my-tabs {
     position: relative;
     width: 960px;
     display: flex;
     justify-content: space-between;
 
 }
-.tabs{
+
+.tabs {
     width: 200px;
     border-radius: 15%;
     height: 412px;
@@ -25,7 +29,8 @@
     background: #fff;
     margin-bottom: 50px;
 }
-.tabs::after{
+
+.tabs::after {
     margin-top: -102px;
     margin-left: 146px;
     content: "";
@@ -33,25 +38,29 @@
     border: 2em solid #f2f2f2;
     border-left-color: #fff;
 }
-.tabs-content{
+
+.tabs-content {
     border-radius: 5%;
     width: 730px;
     height: 400px;
     position: relative;
 
 }
-.tabs a{
-    text-decoration:none;
-    color:#000;
-    display:inline-block;
-    width:96px;
-    text-align:center;
+
+.tabs a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    width: 96px;
+    text-align: center;
 }
-.tabs>li{
-    padding:10px 0;
+
+.tabs > li {
+    padding: 10px 0;
     border-radius: 50%;
 }
-.box{
+
+.box {
     width: 95px;
     height: 42px;
     box-sizing: border-box;
@@ -61,14 +70,13 @@
     top: 110px;
     left: 53px;
     border-radius: 50%;
-    transition:all .5s linear;
+    transition: all .5s linear;
 }
 
-
-.tabs-content>div{
+.tabs-content > div {
     transform: translateY(400px) rotateX(-90deg);
     transition: all .5s linear;
-    padding:30px;
+    padding: 30px;
     width: 670px;
     height: 350px;
     background: #fff;
@@ -77,14 +85,17 @@
     top: 0;
     left: 0;
 }
-.tabs-content>div h2{
+
+.tabs-content > div h2 {
     padding: 20px 5px;
 }
-.tabs-content>div p{
-    padding:10px 5px;
-}
-.tabs-content>.active{
-    z-index:10;
-    transform: translateZ(800px);
 
+.tabs-content > div p {
+    padding: 10px 5px;
 }
+
+.tabs-content > .active {
+    z-index: 10;
+    transform: translateZ(800px);
+}
+

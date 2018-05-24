@@ -113,15 +113,13 @@
             loadProductByPage(placeloc,jdtype,level,season,1);
         });
 
-
-
         //处理分页单击事件
         $("#pages").on("click","a",e=>{
             e.preventDefault();
-            console.log(e.target);
+            // console.log(e.target);
             var data = $(e.target).data("page");
             //split拆分 返回数组
-            console.log(data);
+            // console.log(data);
             var arr = data.split("_");
             loadProductByPage(arr[1],arr[2],arr[3],arr[4],arr[5]);
         });
